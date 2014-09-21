@@ -7,7 +7,7 @@
 ==================================================================
 
 ### Introduction
-The code book aims to describe the data, the variables and the operations performed.
+The code book aims to present the data, the variables and the operations performed.
 
 ### Variables
 The original data set contains 561 variables related to the measurements and its operations, besides the variable "Subject" and the variable "Activity".
@@ -34,7 +34,10 @@ After processing the data the variables shown in the file output_DataSet2.txt ar
 * 18 tBodyGyro-std()-Y
 * 19 tBodyGyro-std()-Z
 
+Check README.txt from the original data set for further information about measured variables (3 to 19).
+
 The variable "Activity_Name" is obtained based in the information stored in activity_labels.txt, in the original data set.
+
 
 ### Data
 The original data set is formed by:
@@ -45,13 +48,13 @@ The original data set is formed by:
 
 - 'activity_labels.txt': Links the class labels with their activity name. (6 obs. and 2 var.)
 
-- 'train/X_train.txt': Training set. ()
+- 'train/X_train.txt': Training set. (7352 obs. and 561 variables)
 
-- 'train/y_train.txt': Training labels. ()
+- 'train/y_train.txt': Training labels. (7352 obs. and 1 variable)
 
-- 'test/X_test.txt': Test set. ()
+- 'test/X_test.txt': Test set. (2947 obs. and 561 variables)
 
-- 'test/y_test.txt': Test labels. ()
+- 'test/y_test.txt': Test labels. (2947 obs. and 1 variable)
 
 - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
