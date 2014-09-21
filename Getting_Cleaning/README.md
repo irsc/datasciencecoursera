@@ -23,7 +23,7 @@ This repo includes the following files:
 * The script assume you do not have the data required for the analysis 
  -> Action: the data is downloaded from the link: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-* The script extracts the variables considered relevant: the mean and standard deviation of the less processed variables. In this particular case the variables selected have been:Body Acceleration, Gravity Acceleration and Body Gyroscope. The columns in the original data set are (1-6), (41-46) and (121-126) respectively.
+* The script extracts the variables considered relevant: the mean and standard deviation of the less processed variables. In this particular case the variables selected have been:Body Acceleration, Gravity Acceleration and Body Gyroscope, all of them in time domain. The columns in the original data set are (1-6), (41-46) and (121-126) respectively.
 
 * In general, it is assumed you are familiar with the original data set. Please, check the README.txt file included in the data set downloaded and the CodeBook.md. 
 
