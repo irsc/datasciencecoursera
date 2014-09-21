@@ -14,31 +14,46 @@ The original data set contains 561 variables related to the measurements and its
 
 After processing the data the variables shown in the file output_DataSet2.txt are:
 
-1 Subject
-2 Activity_Name
-3 tBodyAcc-mean()-X
-4 tBodyAcc-mean()-Y
-5 tBodyAcc-mean()-Z
-6 tBodyAcc-std()-X
-7 tBodyAcc-std()-Y
-8 tGravityAcc-mean()-X
-9 tGravityAcc-mean()-Y
-10 tGravityAcc-mean()-Z
-11 tGravityAcc-std()-X
-12 tGravityAcc-std()-Y
-13 tGravityAcc-std()-Z
-14 tBodyGyro-mean()-X
-15 tBodyGyro-mean()-Y
-16 tBodyGyro-mean()-Z
-17 tBodyGyro-std()-X
-18 tBodyGyro-std()-Y
-19 tBodyGyro-std()-Z
+* 1 Subject: Subject reference number (1 to 30)
+* 2 Activity_Name: Activity label name (walking, walking upstairs, walking downstairs, sitting, standing and laying)
+* 3 tBodyAcc-mean()-X: 
+* 4 tBodyAcc-mean()-Y
+* 5 tBodyAcc-mean()-Z
+* 6 tBodyAcc-std()-X
+* 7 tBodyAcc-std()-Y
+* 8 tGravityAcc-mean()-X
+* 9 tGravityAcc-mean()-Y
+* 10 tGravityAcc-mean()-Z
+* 11 tGravityAcc-std()-X
+* 12 tGravityAcc-std()-Y
+* 13 tGravityAcc-std()-Z
+* 14 tBodyGyro-mean()-X
+* 15 tBodyGyro-mean()-Y
+* 16 tBodyGyro-mean()-Z
+* 17 tBodyGyro-std()-X
+* 18 tBodyGyro-std()-Y
+* 19 tBodyGyro-std()-Z
 
 The variable "Activity_Name" is obtained based in the information stored in activity_labels.txt, in the original data set.
 
 ### Data
 The original data set is formed by:
 
+- 'features_info.txt': Shows information about the variables used on the feature vector. 
+
+- 'features.txt': List of all features. (561 obs. and 2 var.)
+
+- 'activity_labels.txt': Links the class labels with their activity name. (6 obs. and 2 var.)
+
+- 'train/X_train.txt': Training set. ()
+
+- 'train/y_train.txt': Training labels. ()
+
+- 'test/X_test.txt': Test set. ()
+
+- 'test/y_test.txt': Test labels. ()
+
+- 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
 Note: The data in folders "Inertial Signals" have not been used
 
