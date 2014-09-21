@@ -30,20 +30,23 @@ This repo includes the following files:
 
 ### Description of the script
 
-1) Downloading the data:
+* 1) Downloading the data:
 Using the url address and the download.file() the file (zip file) is downloaded in the initially selected working directory.
-2) Unzipping the files:
+* 2) Unzipping the files:
 The function unzip() is used to extract the files into the currect folder
-3) Working directory: 
+* 3) Working directory: 
 The working directory is selected inside the extracted folder, called "UCI HAR Dataset". Please, remember that the outfiles will be saved inside this folder!
-4) Load train data: Using read.table() function, the files are readed and loaded.
-5) Merge the train data using cbind() function:
+* 4) Load train data: Using read.table() function, the files are readed and loaded.
+* 5) Merge the train data using cbind() function:
 The dataframe and vectors loaded are merged by columns. train_df (563 variables and 7342 obs.) data frame is created.
-6) Same sequence (5)&(6) is repeated for test data. test_df (563 variables and 2947 obs.) data frame is created.
-7) Merge test_df and train_df in one data frame: In this case rbind() function is used. data (563 variables and 10299 obs.) data frame is created.
-8) Names for columns: using the variable names stored in the file features.txt, names are assigned using colnames() function. Since the variable names Subject and Activity are not included, these are included using an auxiliar vector var_names and merging there the names from features.txt and Subject and Activity.
-9) Subsetting the relevant columns, including the last two columns (Subject and Activity). data_filt (19 variables and 10299 obs.) is created.
-10) Names for the activities: 
+* 6) Same sequence (5)&(6) is repeated for test data. test_df (563 variables and 2947 obs.) data frame is created.
+* 7) Merge test_df and train_df in one data frame: In this case rbind() function is used. data (563 variables and 10299 obs.) data frame is created.
+* 8) Names for columns: using the variable names stored in the file features.txt, names are assigned using colnames() function. Since the variable names Subject and Activity are not included, these are included using an auxiliar vector var_names and merging there the names from features.txt and Subject and Activity.
+* 9) Subsetting the relevant columns, including the last two columns (Subject and Activity). data_filt (20 variables and 10299 obs.) is created.
+* 10) Names for the activities: using the names stored in activity_label.txt and the reference numbers in Activity column, a new vector is created using match() function. The data_filt dataframe is subsetted again to remove the Activity column and the new vector Activity_Name is added using cbind(). DataSet1 (20 variables and 10299 obs.) is created.
+* 11) A first file is written and saved as output_DataSet1.txt
+* 12) Create second tidy data set: Using subset() function two subsets from the DataSet1 are created: dset.x, which stores all the variables except Subject and Activity_Name; and dset.s which only keeps Subject and Activity_Name. These two subsets are used with by() function to calculate the mean for every subject in each activity.
+* 13) A second file is written and saved as output_DataSet2.txt
 
 ### Example 
 
