@@ -1,10 +1,10 @@
 ==================================================================
 ## John Hopkins University -Data Science Specialization - Coursera
 ##Getting and Cleaning Data: Course Project
- =================================================================
-Author: Ignacio Rivero
-Date: 17/09/2014
- ==================================================================
+=================================================================
+####Author: Ignacio Rivero
+####Date: 17/09/2014
+==================================================================
 
 ### Introduction
 The code book aims to describe the data, the variables and the operations performed.
